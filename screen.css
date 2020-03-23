@@ -7,3 +7,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+/* Form Styles */
+input,
+label {
+  display: block;
+}
+form li {
+  margin-bottom: 1.25em;
+}
+
+@media screen and (min-width: 250px) {
+  form li {
+    display: flex;
+  }
+}
+
+/* Accessibility Styles */
+label[for="ui-submit"] {
+  position: absolute;
+  left: -10000px;
+}
